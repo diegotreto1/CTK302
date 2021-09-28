@@ -29,6 +29,10 @@ function draw() {
   fill(0);
   text(mouseX + ", " + mouseY, 40, 40);
 
+  text('Lorem ipsum or whatever \n do this to indent', 20, 20) ;
+
+  // escape character, basically quotes ur words \ \
+  //back slash n indents \n
 }
 
 
