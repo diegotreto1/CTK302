@@ -6,6 +6,7 @@ function setup() {
 
 function draw() {
   background('grey') ;
+  fill('green');
   rect(x, 100, 100, 100) ;
   x = x + 1  ;
 
