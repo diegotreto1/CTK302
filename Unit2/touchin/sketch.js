@@ -1,4 +1,6 @@
-let numberOfTouches ;
+let img1, img2, img3;
+let numberOfTouches;
+
 
 function setup() {
   createCanvas(400, 400);
@@ -9,27 +11,28 @@ function draw() {
   numberOfTouches = touches.length;
   text(numberOfTouches + ' touches', 5, 10);
 
-  switch(numberOfTouches) {
+  switch (numberOfTouches) {
     case 0:
-      text("hello", 5, 22) ;
-      break ;
+      text("hey there", 5, 22);
+      break;
 
-      case 1:
-       text("I miss you", 5, 22) ;
+    case 1:
+      text("i think my tv broke", 5, 22);
       // put a picture here
-      break ;
+      img1 = loadImage("assets/desync.png");
+      break;
 
-      case 2:
-      text("what is new with you?", 5, 22) ;
-            // put a picture here
-      break ;
+    case 2:
+      text("can you fix it?", 5, 22);
+      // put a picture here
+      img1 = loadImage("assets/velvetdesync.png");
+      break;
 
-      case 3:
-     text("yayyyy!", 5, 22) ;
-            // put a picture here
-      break ;
+    case 3:
+      text("thankyou!", 5, 22);
+      // put a picture here
+      img1 = loadImage("assets/feedback.png");
+      break;
 
-
-  }
 
 }
