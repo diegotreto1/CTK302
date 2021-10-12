@@ -6,10 +6,10 @@ function setup() {
 
 function draw() {
   switch (state) {
-    case 0;
-    background('white');
-    text("why did the chicken \ncross the road", 100, 100);
-    break;
+    case 0:
+      background('white');
+      text("why did the chicken \ncross the road", 100, 100);
+      break;
 
     case 1:
       background('yellow');
@@ -17,21 +17,21 @@ function draw() {
 
       break;
   }
+}
 
-  timer++ ;
-  if (timer > 3*60) {
+  timer++;
+  if (timer > 3 * 60) {
     timer = 0;
-    state++ ;
+    state++;
     if (state > 1) state = 0;
 
   }
 
-}
 
-function mouseReleased() {
-  state++;
-  if (state > 1) {
-    state = 0;
 
+  function mouseReleased() {
+    state++;
+    if (state > 1) {
+      state = 0;
+    }
   }
-}

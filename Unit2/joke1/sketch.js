@@ -5,7 +5,7 @@ function setup() {
 
 function draw() {
   switch (state) {
-    case 0;
+    case 0:
     background('white');
     text("why did the chicken \ncross the road", 100, 100);
     break;
