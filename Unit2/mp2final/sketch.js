@@ -38,7 +38,7 @@ function draw() {
       background('black');
       // get the sound input
       vol = (mic.getLevel().toFixed(2)); // returned level is between 0 and 1
-      if (vol > .2) {
+      if (vol > .1) {
         state = 2;
       }
       image(img2, 200, 200);
@@ -50,7 +50,7 @@ function draw() {
     case 2:
       background('green');
       timer++;
-      if (timer > 3*60) {
+      if (timer > 6*60) {
         timer = 0;
         state = 3;
       }
@@ -63,7 +63,7 @@ function draw() {
     case 3:
       background('red');
       timer++;
-      if (timer > 5*60) {
+      if (timer > 6*60) {
         timer = 0;
         state = 0;
       }
