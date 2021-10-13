@@ -50,7 +50,7 @@ function draw() {
     case 2:
       background('green');
       timer++;
-      if (timer > 6*60) {
+      if (timer > 8*60) {
         timer = 0;
         state = 3;
       }
@@ -63,7 +63,7 @@ function draw() {
     case 3:
       background('red');
       timer++;
-      if (timer > 6*60) {
+      if (timer > 8*60) {
         timer = 0;
         state = 0;
       }
