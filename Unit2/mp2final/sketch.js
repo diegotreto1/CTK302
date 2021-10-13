@@ -43,8 +43,8 @@ function draw() {
       }
       image(img2, 200, 200);
       img2.resize(720, 480);
-      text('I like to make video art specifically a technique called video feedback! \n say something to move to the next image!', 100, 100);
-      textSize(30);
+      text('I like to make video art! Say something to move to the next image!', 100, 100);
+      textSize(15);
       break;
 
     case 2:
